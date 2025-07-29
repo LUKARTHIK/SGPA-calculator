@@ -1,38 +1,11 @@
-"""
-python
-name=input("enter a name:")
-USN=input("enter a USN:")   
-no_of_subjects=int(input("enter  a number of sujects:")) 
-total_credits=0
-total_earned_credits=0 
+###_ SGPA Calculator – VTU Results Made Easy_
+This project is a simple and intuitive _** SGPA**_ (Semester Grade Point Average) calculator designed for students under VTU (Visvesvaraya Technological University) and similar academic systems. It helps students quickly compute their SGPA based on subject credits and grades without manual effort.
 
-
-for i in range(1,no_of_subjects+1): 
-          marks=int(input(f"enter a marks scored in subject{i}:"))
-          if marks>=90:earned_points=10
-          elif 80<=marks<90:earned_points=9
-         
-          elif 70<=marks<80:earned_points=8
-         
-          elif 60<=marks<70:earned_points=7
-         
-          elif 50<=marks<60:earned_points=6          
-         
-          elif 40<=marks<50:earned_points=5
-          
-          elif 30<=marks<40:earned_points=4
-         
-          elif 20<=marks<30:earned_points=3
-       
-          elif 10<=marks<20:earned_points=2
-         
-          elif 0<=marks<10:earned_points=1
-         
-          
-          credit=int(input(f"enter a credits of subject{i}:" ))
-          total_credits+=credit 
-          total_earned_credits+=(earned_points*credit)  
-if total_credits>0:          
-    print(f"SGPA is:{(total_earned_credits/total_credits):2f}") 
-else:print("enter a valid credits")
-"""
+_step 1_: input user name
+_step 2_: input user USN
+_step 3_: input number of sujects user have
+_step 4_: run the for loop with the range of (1,number of subjects +1)
+_step 5_: In  each iteration of for loop ,get input of each subject marks and credits of that subjects.
+_step 6_: use condition statement to fetch particular earned points in particular subjects.
+_step 7_: while running for loop ,calculate total earned credits and total credits
+_step 8_: finnallly ,print the SGPA in the output console.
